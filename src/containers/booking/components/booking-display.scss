@@ -1,0 +1,97 @@
+@import "assets/styles/main.scss";
+.booking {
+    &__display {
+        position: relative;
+        color: $white;
+        padding: 90px 56px;
+        background-color: $primary;
+        width: 40%;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 128px;
+            font-weight: 300;
+        }
+    }
+
+    &__label {
+        text-align: left;
+        background-color: $secondary;
+        font-size: $font-lg;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 56px 48px 25px 48px;
+        width: calc(100% - 152px);
+        transition: width 250ms ease-in-out;
+        @include breakpoint-down("xl") {
+            font-size: $font-md;
+        }
+        @include breakpoint-down("md") {
+            width: 100%;
+        }
+    }
+
+    &__subtext {
+        font-size: $font-sm;
+        &--date {
+            display: inline-block;
+            color: rgba($white, 0.5);
+            margin-bottom: 10px;
+        }
+    }
+
+    &__coming {
+        display: flex;
+        flex-direction: column;
+        font-family: "Lato", "sans-serif";
+        &-status {
+            margin-bottom: 50px;
+        }
+        &-wrapper {
+            font-weight: 300;
+            margin-bottom: 50px;
+        }
+        &-day {
+            font-size: $font-lg;
+            color: rgba($white, 0.5);
+            margin-bottom: 15px;
+            @include breakpoint-down("md") {
+                margin-bottom: 10px;
+                font-size: $font-md;
+            }
+        }
+        &-date {
+            font-size: $font-lg;
+            font-weight: 300;
+            @include breakpoint-down("md") {
+                font-size: $font-lg;
+            }
+        }
+    }
+
+    &__rooms {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__room-item {
+        text-decoration: none;
+        font-size: $font-sm;
+        color: $white;
+        margin-right: 10px;
+        &:focus,
+        &:active,
+        &:hover {
+            text-decoration: none;
+            color: rgba($white, 0.5);
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

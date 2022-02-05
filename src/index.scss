@@ -1,0 +1,35 @@
+@import "assets/styles/main.scss";
+
+*::-webkit {
+  &-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &-scrollbar-track {
+    background-color: rgba($grey, 1);
+    transition: all 200ms ease-in-out;
+  }
+  &-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: rgba($black, 0.1);
+    transition: all 200ms ease-in-out;
+    &:hover {
+      background-color: rgba($black, 0.2);
+    }
+  }
+}
+
+#root,
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: $black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

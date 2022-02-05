@@ -1,0 +1,69 @@
+@import "assets/styles/main.scss";
+.booking {
+    &__schedule {
+        width: 60%;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: $grey;
+
+        &-filter {
+            display: flex;
+            padding: 55px 55px 0 55px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            color: $black;
+            text-transform: uppercase;
+            @include breakpoint-down("md") {
+                padding: 55px 25px 0 25px;
+                width: 100%;
+            }
+        }
+
+        &-tab {
+            text-decoration: none;
+            color: rgba($black, 0.5);
+            margin-right: 55px;
+            padding-bottom: 30px;
+            position: relative;
+            text-align: center;
+            font-size: $font-md;
+            cursor: pointer;
+            @include breakpoint-down("lg") {
+                font-size: $font-sm;
+            }
+            @include breakpoint-down("md") {
+                margin-right: 25px;
+                flex: 1 1 auto;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &:focus,
+            &:active,
+            &:hover {
+                text-decoration: none;
+            }
+            &:hover {
+                color: rgba($black, 1);
+            }
+            &.active {
+                color: rgba($black, 1);
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: $primary;
+                    width: 50%;
+                    height: 4px;
+                    max-width: 50px;
+                }
+            }
+        }
+    }
+}

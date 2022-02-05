@@ -1,0 +1,33 @@
+// Colors
+$black: #000000;
+$primary: #46529d;
+$secondary: #2ebaee;
+$grey: #efeeec;
+$white: #ffffff;
+
+// Font Sizes
+$font-sm: 1rem; // 16px
+$font-md: 1.5rem; //24px
+$font-lg: 3.375rem; // 54px
+$font-xlg: 4rem; // 64px
+
+// Breakpoints
+// 360px 576px, 768px, 992px, 1200px, 1400px
+$breakpoints-up: (
+    xs: "22.5rem",
+    sm: "36rem",
+    md: "48rem",
+    lg: "62rem",
+    xl: "75rem",
+    xxl: "87.5rem",
+);
+
+// 359px, 575px, 767px, 991px, 1199px, 1399px
+$breakpoints-down: (
+    xs: "22.4375rem",
+    sm: "35.9375rem",
+    md: "47.9375rem",
+    lg: "61.9375rem",
+    xl: "74.9375rem",
+    xxl: "87.4375rem",
+);

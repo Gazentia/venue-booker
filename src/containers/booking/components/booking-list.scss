@@ -1,0 +1,19 @@
+@import "assets/styles/main.scss";
+.booking {
+    &__item {
+        margin: 20px 0;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    &__subtext {
+        font-size: $font-sm;
+        &--date {
+            display: inline-block;
+            color: rgba($white, 0.5);
+            margin-bottom: 10px;
+        }
+    }
+}
